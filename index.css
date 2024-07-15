@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #001f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.home, .guest {
+    width: 45%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.court {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; /* Maintain aspect ratio */
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.half-court {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%; /* Adjust width as needed */
+    height: 70%; /* Adjust height as needed */
+    background-color: black;
+    transform: translate(-50%, -50%);
+    border: 2px solid #f58220;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #f58220;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    margin-left: 20px;
+    font-family: 'Digital-7', sans-serif; /* Robotic font */
+}
+
+.Scores {
+    font-size: 3em; /* Adjust size for a digital display effect */
+    color: #00ff00; /* Green color for digital effect */
+    letter-spacing: 0.1em; /* Space between digits */
+    text-shadow: 0 0 3px rgba(0, 255, 0, 0.5); /* Add a subtle glow effect */
+}
+
+button:hover {
+    background-color: #d46e0f;
+}
+
+.reset-container {
+    margin-top: 5px;
+}
